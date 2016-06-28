@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, section .container, #menu-box i {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, section h2, #menu-box h3 {
+  font-family: 'Abel', sans-serif; }
+
+.uppercase, section h2, #menu-box h3 {
+  text-transform: uppercase; }
+
+/* Header
+------------------------------------------------------------*/
+.flexible-images {
+  max-width: 100%;
+  height: auto;
+}
+
+#topimg {
+  background-image: url("../images/cafe_top.png");
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+
+
+header h1 {
+  font-size: 2.8rem;
+  color: #bea300;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  }
+  
+h2 {
+  font-size: 2.4rem;
+  background-color: #fea747;
+  color: #78683f;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  margin: 8px;
+  line-height: 120%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Contents
+------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .flexible-images {
+    flex-direction: column;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+}
+.box {
+  border: solid 1px #ff6633;
+  margin: 10px;
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+
+/* Footer
+------------------------------------------------------------*/
+footer {
+  background-color: #dd6600;
+  padding: 10px 0;
+  text-align: center;
+  font-size: small;
+  color: #FFF; }
+  
+.map_btn {
+	font-size:14px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #eda933;
+	padding:5px 5px;
+	margin:5px;
+	text-align:center;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #f6b33d 21%, #d16c07 84% );
+	background:-ms-linear-gradient( top, #f6b33d 21%, #d16c07 84% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d', endColorstr='#d16c07');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(21%, #f6b33d), color-stop(84%, #d16c07) );
+	background-color:#f6b33d;
+	color:#ffffff;
+	display:inline-block;
+	text-shadow:1px 3px 0px #f29900;
+ 	-webkit-box-shadow:inset 1px 1px 0px 0px #fed897;
+ 	-moz-box-shadow:inset 1px 1px 0px 0px #fed897;
+ 	box-shadow:inset 1px 1px 0px 0px #fed897;
+}
+
+
+
